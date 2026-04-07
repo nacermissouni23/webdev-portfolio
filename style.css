@@ -53,7 +53,7 @@ body {
 
 /* Typography */
 h1, h2, h3, .v-heading { font-family: var(--font-display); font-weight: 700; line-height: 1.05; text-transform: uppercase; }
-.v-massive { font-size: clamp(3rem, 8vw, 8rem); }
+.v-massive { font-size: 6.1rem; margin-bottom: 2rem; }
 
 /* Navigation */
 .v-nav {
@@ -87,7 +87,7 @@ h1, h2, h3, .v-heading { font-family: var(--font-display); font-weight: 700; lin
 .v-btn-submit { width: 100%; }
 
 /* Add spacing for WhatsApp button in contact area */
-.v-contact-text .v-btn-wa { margin-top: 1.25rem; }
+.v-contact-text .v-btn-wa { margin-top: 2.5rem; }
 
 /* Floating WhatsApp button bottom-right */
 .float-wa {
@@ -235,11 +235,11 @@ h1, h2, h3, .v-heading { font-family: var(--font-display); font-weight: 700; lin
 
 /* Services */
 .v-services-list { border-top: 1px solid var(--border); margin-top: 4rem;}
-.v-serve-row { display: grid; grid-template-columns: 1fr 2fr; align-items: center; padding: 3rem 0; border-bottom: 1px solid var(--border); transition: 0.3s; }
+.v-serve-row { display: grid; grid-template-columns: 1fr 2fr auto; gap: 1.5rem; align-items: center; padding: 3rem 0; border-bottom: 1px solid var(--border); transition: 0.3s; }
 .v-serve-row:hover { padding-left: 2rem; padding-right: 2rem; background: var(--glass); }
 .v-serve-row h3 { font-size: 2rem; color: var(--accent); }
 .v-serve-row p { font-size: 1.1rem; opacity: 0.8; }
-.v-serve-price { font-family: var(--font-display); font-weight: 700; border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 100px; }
+.v-serve-price { font-family: var(--font-display); font-weight: 700; border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 100px; white-space: nowrap; }
 
 /* Contact Forms */
 .v-contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
@@ -275,6 +275,7 @@ h1, h2, h3, .v-heading { font-family: var(--font-display); font-weight: 700; lin
   .v-work-item { flex: 0 0 calc(70% - 1rem); }
   .mt-offset { margin-top: 2rem; }
   .v-serve-row { grid-template-columns: 1fr; gap: 1rem; padding: 2rem 0; }
+  .v-serve-price { justify-self: start; }
 }
 
 @media(max-width: 768px) {
